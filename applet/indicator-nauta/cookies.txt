@@ -1,0 +1,11 @@
+# HTTP Cookie File downloaded with cookies.txt by Genuinous @genuinous
+# This file can be used by wget, curl, aria2c and other standard compliant tools.
+# Usage Examples:
+#   1) wget -x --load-cookies cookies.txt "https://mi.cubacel.net/primary/_-ijqJlSHh"
+#   2) curl --cookie cookies.txt "https://mi.cubacel.net/primary/_-ijqJlSHh"
+#   3) aria2c --load-cookies cookies.txt "https://mi.cubacel.net/primary/_-ijqJlSHh"
+#
+mi.cubacel.net	FALSE	/login/	FALSE	0	JSESSIONID	ADF22C6054A33765C072CF5568649872
+mi.cubacel.net	FALSE	/	FALSE	1588005522	guestUserProfile	eJyrVspJLC7Jzssvz0tJLctMTlWyUvLNr8rMyUnUN9UzUNIByuelAwVTi5VqAXOYDw4=
+mi.cubacel.net	FALSE	/	FALSE	0	DRUTT_DSERVER_SESSIONID	16a64cf2a80.p0vDP0bPieOWHX6iRrxrKJQXU6aLLC3baQbTYAs2
+mi.cubacel.net	FALSE	/	FALSE	1588005554	portaluser	1556469530915:c7464feaa510f6a4145fa3db93a551c3df215f9832842fa70539624d28d9e293ea2acccca3d93c30912a78383bc2ab080cee90919e4ae4d56ccadaa286b53c3594c2892a9263f0491a938dbfd8d5a6dbeaa23212f070657266affce76859db416ea079806ae14b7

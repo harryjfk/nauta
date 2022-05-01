@@ -1,0 +1,11 @@
+value = soup.find_all(class_="circle-text")
+MB = soup.find_all(class_="circle-info-half")
+Expire_date = soup.find_all(class_="expires_date")
+expires_hours = soup.find_all(class_="expires_hours")
+# find all instances of that class (should return 25 as shown in the github main page)
+#repo_list = repo.find_all(class_='col-12 d-block width-full py-4 border-bottom')
+if len(value)== 0:
+    print("Disconnected");
+else:
+    print(value[0].text+" "+ MB[0].text+"("+Expire_date[0].text+"d)-"+value[1].text+" "+ MB[1].text+"("+Expire_date[1].text+"d)")
+

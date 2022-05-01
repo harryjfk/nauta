@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>ETECSA Cubacel</title>
+
+<script type="text/javascript" src="ETECSA%20Cubacel_files/jquery-1.js"></script>
+<script type="text/javascript" src="ETECSA%20Cubacel_files/bootstrap.js"></script>
+<script type="text/javascript" src="ETECSA%20Cubacel_files/validation_1.js"></script>
+<script type="text/javascript" src="ETECSA%20Cubacel_files/md5.js"></script>
+<script type="text/javascript" src="ETECSA%20Cubacel_files/jcap.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		
+		var localWelcomeLogin = $("#localeWelcomeLogin").val();  
+		
+		var languageWelcomeLogin = $("#languageWelcomeLogin").val();
+		
+		if((languageWelcomeLogin=="es") || (languageWelcomeLogin=="es-ES") || (languageWelcomeLogin=="es_ES") || (localWelcomeLogin=="es") || 
+			(localWelcomeLogin=="es-ES") || (localWelcomeLogin=="es_ES"))
+			{
+				$("#aSpanish").css("display","none");	 
+				$("#aEnglish").css("display","block");	  	
+
+				$("#loginForm").validate({
+					rules: {
+						username: "required",
+						Password: "required",
+						captcha:  "required",
+						username: {	required: true, minlength: 8,maxlength: 8,digits: true},
+						Password: {	required: true, minlength: 7},
+						captcha: {	required: true}
+
+					},
+					messages: {
+						username: "Ingrese su n&uacute;mero de tel&eacute;fono",
+						password: "Ingrese su contrase&ntilde;a",
+						username: {
+							required: "El n&uacute;mero de tel&eacute;fono no puede estar vac&iacute;o ",
+							minlength: "El n&uacute;mero de tel&eacute;fono debe contener 8 d&iacute;gitos",
+							maxlength: "El n&uacute;mero de tel&eacute;fono superior contener 8 d&iacute;gitos", 
+							digits: "El n&uacute;mero de tel&eacute;fono debe contener s&oacute;lo contrase&ntilde;as"
+						},
+						password: {
+							required: "La contrase&ntilde;a no puede estar vac&iacute;a",
+							minlength: "La contrase&ntilde;a debe contener al menos 7 caracteres"
+						},
+						captcha: "Ingrese el c&oacute;digo como se muestra a continuaci&oacute;n"
+					}
+				});			
+			}
+		
+		if((languageWelcomeLogin=="en") || (languageWelcomeLogin=="en-US") || (languageWelcomeLogin=="en_US") || (localWelcomeLogin=="en") || 
+			(localWelcomeLogin=="en-US") || (localWelcomeLogin=="en_US")) 
+		{
+			$("#aEnglish").css("display","none");
+			$("#aSpanish").css("display","block");	
+			
+			$("#loginForm").validate({
+					rules: {
+						username: "required",
+						Password: "required",
+						captcha:  "required",
+						username: {	required: true, minlength: 8,maxlength: 8,digits: true},
+						Password: {	required: true, minlength: 7},
+						captcha: {required: true}
+					},
+					messages: {
+						username: "Enter your phone number",
+						password: "Enter your password",
+						username: {
+							required: "The phone number can not be vacant ",
+							minlength: "Phone number less than 8 digits",
+							maxlength: "Phone number greater than 8 digits",
+							digits: "The phone number must contain only digits"
+						},
+						password: {
+							required: "The password can not be vacant",
+							minlength: "The password must contain at least 7 characters" 
+						},
+						captcha: "Enter the code as shown below"
+					}
+				});	
+		}
+	
+	/* Input only numbers */	
+	$("#username").keypress(function (e) {
+         if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                    return false;
+    }
+    });
+	
+		/* For Password */
+		$("#password").keypress(function (e) {
+			if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57) && (e.which < 97 || e.which > 122) && (e.which < 65 || e.which > 90)) {
+               return false;
+		}
+		});	
+		
+	});
+</script>
+<script src="ETECSA%20Cubacel_files/prompt.js"></script></head>
+         
+<body id="inner_page"> 
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+<link rel="stylesheet" href="ETECSA%20Cubacel_files/cubastyles.css">	
+<link rel="stylesheet" href="ETECSA%20Cubacel_files/fonts.css">
+
+
+
+
+	<div class="freeze_wrapper">
+		<div class="header">
+			<div class="white_header">
+				<div class="container">
+				<input type="hidden" value="en">   
+					<div class="cubaLogo">
+						<a href="https://mi.cubacel.net/primary/main_home?request-language=en"><img class="logo_img" src="ETECSA%20Cubacel_files/Cubacel_header.png"></a>
+					</div>
+
+					<div class="mynav">
+						<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+
+						<div class="navbar-header page-scroll">
+							<img src="ETECSA%20Cubacel_files/menu_mob.png" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+							<div class="collapse navbar-collapse navbar-main-collapse">
+								<ul class="nav navbar-nav">
+									
+									<li id=""><a id="" href="https://mi.cubacel.net/primary/offers?request-language=en">Offers</a></li>
+									<li id=""><a id="" href="https://mi.cubacel.net/primary/products?request-language=en">Products</a></li>
+									<li id=""><a id="" href="https://mi.cubacel.net/primary/my-account?request-language=en">My account</a></li>
+									<li id=""><a id="" href="https://mi.cubacel.net/primary/support?request-language=en">Support</a></li>
+									<li id=""><a id="" href="https://mi.cubacel.net:8443/login/jsp/registerNew.jsp?request-language=en">Register</a></li>
+									<!--<li><a href="portal:offers" class="no_underline">Offers</a></li><li><a href="portal:products" class="no_underline">Products</a></li><li><a href="portal:my-account" class="no_underline">My Account</a></li><li><a href="portal:support" class="no_underline">Support</a></li><li><a href="portal:register" class="no_underline">Register</a></li>-->
+								</ul>
+							</div>
+						</div>
+
+						</nav>
+					</div>
+					<!-- ./mynav ends -->
+				</div>
+			</div>
+		</div>
+		<!-- ./ header -->
+
+	</div>
+	<!--./ freeze_wrapper -->
+
+
+
+	<div class="body_wrapper welcome_login_page">
+		<!-- <div class="bread_crumbs">
+                <div class="container">
+                    <div class="">
+                        <span class="homeMain">Home / Download the new Android app
+                    </div>
+                </div>
+            </div>-->
+		<!-- ./breadCrumbs ends -->
+
+		<div class="inner_page_title">
+			<div class="container">
+			
+			<input type="hidden" value="" id="localeWelcomeLogin">   
+			<input type="hidden" value="en_US">       
+			<input type="hidden" value="en" id="languageWelcomeLogin">    
+				<form style="float:right" class="languageSwicher_msdp" name="language" onchange="submit()"> 
+					<a href="https://mi.cubacel.net:8443/login/jsp/welcome-login.jsp?language=en" class="link_msdp lang-link" id="aEnglish" style="display: none;"> Eng </a> 
+					<a href="https://mi.cubacel.net:8443/login/jsp/welcome-login.jsp?language=es" class="link_msdp lang-link" id="aSpanish" style="display: block;">Esp </a>   
+				</form> 
+				<div> 
+					<h1 class="page_title_heading">   
+					Log in into your account 
+					</h1>
+				</div>
+			</div>
+		</div>
+		<!-- ./inner_page_title ends -->
+
+		<div class="welcome_login welcome_login_Block">
+			<div class="container">
+				<div class="welcome_login_wrapper">
+					<form id="loginForm" name="login_form" onsubmit="return jcap();" action="/login/Login" method="post" novalidate="novalidate"> 
+						<input type="hidden" id="language" name="language" value="en_US">    
+						<fieldset>
+						<div class="form-group">
+							<div class="label_msdp">
+								<label for="username">Phone number </label>
+							</div>
+							<div class="value_msdp">
+								<span class="prefix_wrapper"><input type="text" id="cc" name="cc" value="+53" disabled="disabled" class="disabled_input_field"></span>
+								<input type="text" class="form-control input_postfix" id="username" name="username" maxlength="8" required="" autocomplete="off" aria-required="true">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="label_msdp">
+								<label for="password">Password</label>
+							</div>
+							<div class="value_msdp">
+								<input type="password" minlength="7" class="form-control" name="password" value="" id="password" required="" aria-required="true">
+							</div>
+						</div>
+						<!--LIUVA START CODIGO-->
+                        <div class="form-group captcha_Block">
+							<div class="label_msdp"><label for="captcha">Enter the code as it appears in the image below:</label></div>
+							<div class="value_msdp" id="Re_Captcha">
+								<script type="text/javascript">sjcap();</script><p><input autocomplete="off" type="text" id="uword" name="uword" class="form-control mBottom10" size="10"></p><p id="captchaError"></p><p><img id="imgIDD" src="ETECSA%20Cubacel_files/186.jpg" alt="" width="290" height="80"></p>
+								<noscript><p>[This resource requires a Javascript enabled browser.]</p></noscript>	
+							</div>
+							<div class="form-group captcha_Block_button">
+								<input type="button" class="button_style cancel_button" value="Refresh " onclick="refresh_captcha()">
+							</div>
+						</div>
+						<!--LIUVA END CODIGO-->
+						<div class="form-group">
+							<div class="label_msdp">
+								<label for="rememberme"><input type="checkbox" name="">Remember me</label>
+							</div>
+						</div>
+
+						<div class="form-group buttons_container">
+							<input type="submit" class="button_style" value="Sign in">
+							<!--  <input type="submit" class="button_style cancel_button mLeft10" value="Register" />  -->
+							<a href="https://mi.cubacel.net:8443/login/jsp/registerNew.jsp" class="button_style cancel_button link_button mLeft10">Register</a>
+
+						</div>
+						<div class="form-group">
+							<div class="label_msdp">
+								Forgot your  <a href="https://mi.cubacel.net:8443/login/jsp/forgot-password.jsp">Password  </a> ?
+							</div>
+						</div>
+						</fieldset>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- ./cubacel_app_header ends -->
+
+	</div>
+	<!--./ body_wrapper -->
+	
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>ETECSA Cubacel</title>
+
+
+
+
+	<div class="body_wrapper">
+
+		<div id="backTop">
+			<div class="container">
+				<div class="backTopwrapper">
+					<a href="#top">Back to top</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="main_footer">
+			<div class="copyright_info">
+				<div class="container">
+					<div class="main_footer_row1">
+						<div class="col1">
+							<div class="">
+								<a href="mailto:atencion.usuarios@etecsa.cu" class="no-rewrite"><img src="ETECSA%20Cubacel_files/email.png" class="emailIcon"></a><a href="http://www.facebook.com/etecsa.cu" class="no-rewrite"><img src="ETECSA%20Cubacel_files/facebook.png" class="fbIcon"></a><a href="http://twitter.com/ETECSA_Cuba" class="no-rewrite"><img src="ETECSA%20Cubacel_files/twitter.png" class="twitterIcon"></a>
+							</div>
+						</div>
+						<div class="col2">
+							<div class="contactUs_text">
+								<a id="" href="https://mi.cubacel.net/primary/offers?request-language=en">Offers</a><a id="" href="https://mi.cubacel.net/primary/products?request-language=en">Products</a><a id="" href="https://mi.cubacel.net/primary/my-account?request-language=en">My account</a><a id="" href="https://mi.cubacel.net/primary/support?request-language=en">Support</a>
+								<!--<a href="portal:offers" class="">Offers</a><a href="portal:products" class="">Products</a><a href="portal:my-account" class="">My Account</a><a href="portal:support" class="">Support</a>-->
+							</div>
+						</div>
+						<div class="col3">
+							<div class="">
+								<!--<img src="../images/Etecsa-logo.png" class="etecsa_icon" />-->
+								<a href="http://www.etecsa.cu/" class="no-rewrite"><img src="ETECSA%20Cubacel_files/Etecsa-logo.png" class="etecsa_icon"></a>
+							</div>
+							<!--<div>
+                        <img src="../images/Etecsa_logo.svg" class="etecsa_icon" style="width:124px;height:38px;" />
+                        </div>-->
+						</div>
+					</div>
+					<div class="main_footer_row2">
+						<div class="terms_text">
+							<a href="https://mi.cubacel.net/primary/terms-conditions?request-language=en" class="">Terms and Conditions</a>
+						</div>
+						<div class="copyrigt_text">© 2017 - 2018 Telecommunications Company of Cuba S. A. (ETECSA) All rights reserved</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ./main_footer ends -->
+
+	</div>
+	<!--./ body_wrapper -->
+
+
+
+<script>
+$( document ).ready(function() {
+
+if (document.getElementsByTagName) {
+	var inputElements = document.getElementsByTagName("input");
+	for (i=0; inputElements[i]; i++) {
+		if (inputElements[i].className && (inputElements[i].className.indexOf("disableAutoComplete") != -1)) {
+			inputElements[i].setAttribute("autocomplete","off");
+		}
+	}
+}
+});
+</script>
+
+
+</body></html>

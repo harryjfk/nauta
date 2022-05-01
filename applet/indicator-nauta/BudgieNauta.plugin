@@ -1,0 +1,9 @@
+[Plugin]
+Loader=python3
+Module=budgienauta
+Name=Nauta Datos
+Description=Panel Data Nauta
+Authors=Javier Coro Morales
+Copyright=Copyright © 2019 Javier Coro Morales
+Website=https://glab.qbabit.com:8080/harryjfk/indicator-nauta
+Icon=user-desktop-symbolic

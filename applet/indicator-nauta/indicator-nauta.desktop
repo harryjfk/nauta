@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Nauta Indicator
+Comment=Indicador de consumo de nauta
+Exec=indicator-nauta
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Utility;
+Icon=gnome-system-monitor

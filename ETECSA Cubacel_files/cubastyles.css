@@ -1,0 +1,1561 @@
+
+@font-face {
+font-family: 'Roboto';
+  src: url('https://mi.cubacel.net/EtescaSelfCareApp/css/fonts/Roboto-Regular-webfont.eot'); 
+  src: url('https://mi.cubacel.net/EtescaSelfCareApp/css/fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), 
+  url('https://mi.cubacel.net/EtescaSelfCareApp/css/fonts/Roboto-Regular-webfont.woff') format('woff'), 
+  url('https://mi.cubacel.net/EtescaSelfCareApp/css/fonts/Roboto-Regular-webfont.ttf') format('truetype'), 
+  url('https://mi.cubacel.net/EtescaSelfCareApp/css/fonts/Roboto-Regular-webfont.svg#svgFontName') format('svg');
+}
+
+.lang-link
+{
+border: 1px solid #f7242b;
+text-decoration: none !important;
+padding: 3px;
+color: #f7242b !important;
+}
+
+.languageSwicher_msdp {
+margin-right: 55px;
+margin-top: 23px;
+position: fixed;
+right: 0;
+top: 0;
+z-index: 999 !important;
+}
+
+/* Graph CSS Starts here*/
+.circliful {
+    position: relative; 
+}
+
+.circle-text, .circle-info, .circle-text-half, .circle-info-half {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+}
+
+.circle-info, .circle-info-half {
+	color: #666666;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.circliful .fa {
+	margin: -10px 3px 0 3px;
+	position: relative;
+	bottom: 4px;
+}
+/* Graph CSS Ends here*/
+
+/* Boot strap */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 10px
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear
+}
+
+.fade.in {
+    opacity: 1
+}
+.collapse {
+    display: none
+}
+.collapse.in {
+    display: block
+}
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .35s ease;
+    -o-transition: height .35s ease;
+    transition: height .35s ease
+}
+
+
+.pull-right>.dropdown-menu {
+    right: 0;
+    left: auto
+}
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+    content: "";
+    border-top: 0;
+    border-bottom: 4px solid
+}
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 1px
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+.nav>li {
+    position: relative;
+    display: block
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px
+}
+.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: underline;
+}
+
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+    background-color: #eee;
+    border-color: #428bca
+}
+
+		.navbar {
+			position: relative;
+			min-height: 50px;
+			margin-bottom: 20px;
+			border: 1px solid transparent
+		}
+
+		.navbar-collapse {
+			padding-right: 15px;
+			padding-left: 15px;
+			overflow-x: visible;
+			-webkit-overflow-scrolling: touch;
+			border-top: 0px solid #fff;
+			-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+			box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1)
+		}
+		.navbar-collapse.in {
+			overflow-y: auto
+		}
+		
+
+	
+/*@media (min-width: 768px) {*/
+
+	@media (min-width: 1025px) {
+				.navbar-collapse {
+					width: auto;
+					border-top: 0;
+					-webkit-box-shadow: none;
+					box-shadow: none
+				}
+				.navbar-collapse.collapse {
+					display: block!important;
+					height: auto!important;
+					padding-bottom: 0;
+					overflow: visible!important
+				}
+				.navbar-collapse.in {
+					overflow-y: visible
+				}
+				.navbar-fixed-top .navbar-collapse,
+				.navbar-static-top .navbar-collapse,
+				.navbar-fixed-bottom .navbar-collapse {
+					padding-right: 0;
+					padding-left: 0
+				}
+				
+				.navbar-fixed-top,
+				.navbar-fixed-bottom {
+					border-radius: 0
+				}
+				.navbar>.container .navbar-brand,
+				.navbar>.container-fluid .navbar-brand {
+					margin-left: -15px
+				}
+				.navbar-toggle {
+				display: none
+				}
+				
+				.navbar-nav {
+				float: left;
+				margin: 0
+				}
+				.navbar-nav>li {
+					float: left
+				}
+				.navbar-nav>li>a {
+					padding-top: 15px;
+					/* padding-bottom: 15px */
+				}
+				.navbar-text {
+					float: left;
+					margin-right: 15px;
+					margin-left: 15px
+				}
+				.navbar-text.navbar-right:last-child {
+					margin-right: 0
+				}
+}
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+    /*max-height: 340px*/
+}
+
+.navbar-static-top {
+    z-index: 1000;
+    border-width: 0 0 1px
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+	position:absolute;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.navbar-fixed-top {
+    border-width: 0 0 1px
+}
+.navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0
+}
+
+.navbar-toggle {
+	background-color: transparent;
+    border: 0 solid transparent;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 5px;
+    top: -25px;
+}
+.navbar-toggle:focus {
+    outline: 0
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px
+}
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px
+}
+
+.navbar-nav {
+    margin: 0 -15px
+}
+.navbar-nav>li>a {
+    line-height: 20px
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+.navbar-fixed-bottom .navbar-nav>li>.dropdown-menu {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0
+}
+.navbar-btn {
+    margin-top: 8px;
+    margin-bottom: 8px
+}
+.navbar-btn.btn-sm {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.navbar-btn.btn-xs {
+    margin-top: 14px;
+    margin-bottom: 14px
+}
+.navbar-text {
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7
+}
+.navbar-default .navbar-brand {
+    color: #777
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent
+}
+.navbar-default .navbar-text {
+    color: #777
+}
+.navbar-default .navbar-nav>li>a {
+    color: #777
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #333;
+    background-color: transparent
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #555;
+    background-color: #e7e7e7
+}
+.navbar-default .navbar-nav>.disabled>a,
+.navbar-default .navbar-nav>.disabled>a:hover,
+.navbar-default .navbar-nav>.disabled>a:focus {
+    color: #ccc;
+    background-color: transparent
+}
+.navbar-default .navbar-toggle {
+    border-color: #ddd
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #ddd
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #e7e7e7
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #555;
+    background-color: #e7e7e7
+}
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after{
+    display: table;
+    content: " "
+}
+.clearfix:after,
+.nav:after,
+.navbar:after{
+    clear: both
+}
+
+/* change colours to suit your needs */
+:hover, :focus, :active {
+	outline: none;
+}
+/* Navigation
+----------------------------------------------------*/
+.navbar {
+    background-color: none;
+    border-bottom: 0px solid rgba(255,255,255,0);
+    margin-bottom: 0;
+}
+
+.navbar-custom a {
+    color: #666666;
+	text-decoration:none;
+}
+
+.navbar-custom a:hover, .navbar-custom a:active{
+	/*text-decoration:underline;*/
+}
+.navbar-custom .nav li a {
+    font-size: 18px;
+    font-weight: 400;
+	line-height: 22px;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus/*,
+.navbar-custom .nav li.active a */{
+    outline: 0;
+}
+
+
+.nav > li {
+    padding: 0px;
+}
+.nav > li:first-child{
+padding-left:0;
+}
+.nav > li > a {
+    display: block;
+    position: relative;
+}
+.navbar-nav > li > a {
+    padding-top: 11px;
+	padding-left:30px;
+}
+
+.navbar-custom .nav li.on{
+    background: #fff;
+	border-top:solid 2px #aa238d;
+}
+.navbar-custom .nav li.on a{
+padding-top:11px;
+padding-bottom:19px;
+	color:#aa238d;
+	    outline: 0;
+}
+
+.navbar-toggle {
+    color: #bbb;
+    font-size: 16px;
+    padding: 4px 6px;
+}
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: 0;
+}
+.top-nav-collapse .navbar-nav a, 
+.top-nav-collapse .nav a {
+    color: #FFF;
+}
+.top-nav-collapse .navbar-toggle {
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 9px;
+    padding: 4px 6px;
+    top: 11px;
+}
+ 
+
+/* ----------------------------------------------------------
+	MEDIA QUERIES
+------------------------------------------------------------- */
+
+/* Extra small devices (phones, less than 768px) */
+/*@media (max-width: 767px)*/
+@media (max-width: 1024px) {
+  .container {width: inherit;}
+
+	/* Navigation */
+	.dropdown:hover .dropdown-menu {display:inherit;}
+	.navbar-toggle{background-repeat:no-repeat;padding: 4px 0 4px 0;height:26px;width:21px;margin-top: -15px; margin-bottom: 0;margin-right:10px;}
+
+	.navbar-collapse{background: #666666; margin-top:45px;}
+	.navbar-collapse li{border-bottom:solid 1px #ccc;}
+	.navbar-collapse li:last-child{border-bottom:none;}
+	.navbar {padding: 1px 0 5px 0; border-bottom: 0; letter-spacing: 1px; min-height: inherit;  
+			-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+			-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+			transition: background .5s ease-in-out, padding .5s ease-in-out;
+	}
+	.navbar-custom a{padding-top: 5px;}
+	.top-nav-collapse {padding: 0;}
+	.top-menu{margin-top: 0;}
+	.navbar-custom.top-nav-collapse {border-bottom: 1px solid rgba(255, 255, 255, .3);}
+	.top-nav-collapse .navbar-brand{margin-top: 8px;}
+	.navbar-custom .nav li a {color:#fff;}
+	
+  
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	  .container {width: inherit;}
+
+	/* Navigation */
+	.dropdown:hover .dropdown-menu {display:inherit;}
+
+
+	.navbar-collapse li:last-child{border-bottom:none;}
+	.navbar {padding: 1px 0 5px 0; border-bottom: 0; letter-spacing: 1px; min-height: inherit;  
+			-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+			-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+			transition: background .5s ease-in-out, padding .5s ease-in-out;
+			width:100%;}
+	.navbar-custom a{padding-top: 5px;}
+	.top-nav-collapse {padding: 0;}
+	.top-menu{margin-top: 0;}
+	.navbar-custom.top-nav-collapse {border-bottom: 1px solid rgba(255, 255, 255, .3);}
+	.top-nav-collapse .navbar-brand{margin-top: 8px;}
+	.top-nav-collapse .navbar-toggle{top: 0;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	
+}
+
+
+
+@media only screen and (max-width : 960px) {
+
+
+
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+		.navbar-toggle{background-repeat:no-repeat;padding: 4px 0 4px 0;height:26px;width:21px;margin-top: 38px; margin-bottom: 0;margin-right:0px;broder:solid 2px red;}
+	.navbar-collapse{background: #666666; margin-top:52px;}
+	.navbar-collapse li{width:100%;border-bottom:solid 1px #ccc;padding-top:5px !important;}
+}
+
+@media only screen and (max-width : 768px) {
+			.cubaLogo .logo_img{width:128px;height:auto;}
+			.footer_contact{margin-top:15px;}
+			.copyright_info .col2{padding-top:10!important;}
+}
+
+
+@media only screen and (max-width : 640px) {
+nav#menu {display: none;}
+.mynav .navbar{padding:0;}
+.mynav .container{padding:0;}
+.navbar-custom .nav li.on a{color:#fff;padding-bottom:auto;padding-top:auto;background-image:url(../images/nav_left_background.png); background-repeat:no-repeat; background-position:left center;}
+.navbar-custom .nav li{ border-bottom:1px solid #fff;}
+}
+
+/* minw maxw */
+@media only screen and (max-width : 320px) {
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1000px) {
+
+}
+/********************************* Bootstrap CSS ends here ************************************/
+
+/* -------------------------------------------------------------
+	HTML5 Reset
+------------------------------------------------------------- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+body {
+	line-height:1;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content:'';
+	content:none;
+}
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+	background-color:#ff9;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom:1px dotted;
+	cursor:help;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #cccccc;
+	margin:1em 0;
+	padding:0;
+}
+input, select {
+	vertical-align:middle;
+}
+:hover, :focus, :active {
+	outline: none;
+}
+video {
+	max-width: 100% !important;
+	height: auto !important;
+}
+
+/* -------------------------------------------------------------
+	Body
+------------------------------------------------------------- */
+
+body {
+	background-color:#ffffff;
+	color: #666666;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.body_wrapper{
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+*::after, *::before {
+    box-sizing: border-box;
+}
+
+a:focus, a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: thin dotted;
+    outline-offset: -2px;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*
+*320px
+*/
+@media (max-width: 320px){
+
+}
+/*
+*480px
+*/
+@media (max-width: 480px){
+.page_title_heading{font-size: 24px;}
+.banner_bg_color{max-width:450px;width:100%;}
+}
+
+/*
+*640px
+*/
+@media (max-width: 640px){
+
+
+}
+/*
+*768px
+*/
+@media (max-width: 768px){
+	.button_style{font-size: 18px; padding: 4px 10px;}
+	.cubacel_app_wrapper .col1{width:100%;}
+	.app_desc{font-size:14px;line-height:18px;padding:10px 0;}
+	.discover_header_block{	margin:0 auto 10px;max-width:330px;}
+	.discover_header_block.no_right_margin{margin-right:auto !important;}
+	.app_button_margin{margin:0 0 10px 0;}
+	.app_title{font-size:18px;}
+	.cubacel_app_wrapper .col2{padding:10px;}
+	.greayheader_row{line-height:30px}
+	.greayheader_row .col1 {width: 100%;}
+	.greayheader_row .col2{width: 100%;}
+	.greayheader_row .col3{width: 100%;}
+	.greayheader_row .col4{width: 100%;}
+	.greayheader_row .col5{width: 100%;text-align:center;}
+	.greayheader_row{line-height:30px;}
+
+	.main_banner{margin-top:51px;}
+		.main_footer_row1 .col1{width:100%;text-align:center;margin-top:20px;margin-bottom:20px;}
+		.main_footer_row1 .col3{width:100%;text-align:center;margin-bottom:20px;}
+		.main_footer_row1 .col2{width:100%;text-align:center;margin-bottom:20px;}
+		.contactUs_text a:last-child{margin-right:0}
+		.main_banner_background{background-position: right center;}
+	.main_banner_blocks{padding-top:250px;width:100%;}
+	.banner_bg_color{width:100%;padding:15px;}
+	.cubaLogo.logo_img{width:128px;height:auto;}
+	.banner_bg_color h2{font-size:20px;}
+	.sub_welcome{font-size:13px;line-height:18px;margin-top:10px;}
+			.top-menu-right, .top-menu{/*display:none;*/}
+			.show_mobile{border:solid 1px green;}
+	
+	.mad_row_header .col1{float:left;width:100%;}
+	.mad_row_header .col2{float:left;width:100%;text-align:left;}
+	.mad_row_footer .col1{float:left;width:100%;}
+	.mad_row_footer .col2{float:left;width:100%;text-align:left;}
+	.mad_row_footer .cvalue {display:inline-block;}
+	.settings_block .col1{float:left;width:100%;margin-bottom:20px;}
+	.settings_block .col2{float:left;width:100%;text-align:left;}
+	.ac_block .col1{width:100%;margin-right:0;float:left;}
+	.ac_block .col2{width:100%;margin-right:0;float:left;padding:0;}
+	.ac_block .col3{width:100%;float:left;}	
+	.ac_block .col3 .button_style{min-width:260px;margin-top:10px;}
+	.expiry_date_right{text-align:left;margin-top:15px;padding-right:30px;margin-bottom:15px;}
+	
+	.mynav{position:relative;height:1px;background:transparent;}
+	.mynav .container{padding-left:0px;padding-right:0px;}
+	.ac_block .charts_data{padding-left:0;max-width:260px;margin:0 auto;}
+	.page_title_heading{font-size: 24px;}
+	.product_block{padding:15px;background:#f4f4f4;max-width:330px;margin:0 auto 20px;}
+.product_block  h4{font-size:20px;margin-bottom:15px;}
+.product_block .product_desc{line-height:18px;margin-bottom:15px;}
+.product_block .product_moreinfo{margin-bottom:15px;}
+}
+
+@media (min-width: 769px) {
+	.main_banner{margin-top:51px;}
+	.container_block_freeze{margin-top:78px;}
+	h1.main_heading{font-size:33px;line-height:42px;}
+	h1.main_title_heading{font-size:34px;line-height:42px;}
+	
+	.main_banner_content{color: #fff;float: left;min-height: 293px;padding-top: 229px;width: 49%;}
+	.main_banner_content h1.main_heading{ margin:15px 0;}
+	.main_banner_content .main_heading_info{min-height:80px;font-size:26px;line-height:32px;}
+
+	.discover_header_block{float:left; margin-right:30px; max-width:330px;}
+
+	.banner_bg_color{padding:15px 65px 15px 18px;}
+	.banner_bg_color h2{font-size:32px;}
+	.sub_welcome{font-size:22px;line-height:26px;}
+
+		.show_mobile{display:none!important;}
+		.main_footer{padding:15px 0;}
+		.main_footer_row1 .col1{float:left;width:13%;}
+		.main_footer_row1 .col3{float:left;width:14%;}
+		.main_footer_row1 .col2{text-align:center;line-height:34px;float:left;width:72.5%;margin-bottom:10px;}		
+		.ac_block .col3 .button_style{min-width:260px;margin-top:10px;}
+		.purchase_history_block .col1,
+.purchase_history_block .col2,
+.purchase_history_block .col3,
+.purchase_history_block .col4,
+.purchase_history_block .col5{float:left;width:50%;}
+
+		.mad_row_header .col1{float:left;width:50%;}
+		.mad_row_header .col2{float:right;width:50%;text-align:right;}
+		.mad_row_footer .col1{float:left;width:50%;}
+		.mad_row_footer .col2{float:right;width:50%;text-align:right;}
+		
+		.ac_block .col1{width:49%;margin-right:1%;float:left;}
+.ac_block .col2{width:49%;margin-right:1%;float:left;padding:0 25px;}
+.ac_block .col3{width:99%;float:left;}
+.ac_block .charts_data{padding-left:40px;}
+.ac_block .col3 .button_style{min-width:260px;margin-top:20px;}
+
+.page_title_heading{font-size: 34px;}
+
+.product_block{padding:15px;background:#f4f4f4;float:left;max-width:330px;margin-bottom:20px;margin-right:30px;}
+.product_block  h4{font-size:20px;margin-bottom:15px;font-weight:400;}
+.product_block .product_desc{line-height:18px;margin-bottom:15px;}
+.product_block .product_moreinfo{margin-bottom:15px;}
+.product_block:nth-child(2n){}
+		.banner_bg_color{max-width:448px;}
+		
+}
+/*
+*992px
+*/
+
+@media (min-width: 992px) {
+	.main_header_left{width:50%;}
+	.main_header_right{padding-left:15px;width:49.5%;}
+	.main_heading_info{margin-top:5px;min-height:128px;}
+	
+	.ticket_block .footer .footer_col1{width:45%;}
+
+	.button_style{font-size: 24px; padding: 6px 15px;}
+	.navbar-nav > li> a{padding-left:15px;}
+	.navbar-nav > li:first-child > a{padding-left:15px;}
+	.faqs_content{width: 60%;}
+
+		.main_banner{margin-top:51px;}
+		.container_block_freeze{margin-top:78px;}
+		.cubacel_app_wrapper{float:left;width:100%;}
+		.cubacel_app_wrapper .col1{width:48.85%;float:left;}
+		.cubacel_app_wrapper .col2{width:51%;padding:27px 20px;float:left;}
+		.cubacel_app_wrapper .app_title{font-size:36px;font-weight:normal;}
+		.app_desc{font-size:14px;font-weight:normal;line-height:20px}
+		.app_button_margin{padding-top:10px;}
+		.greayheader_row{line-height:45px;}
+
+		.contactUs_text {font-size: 16px;}
+		.banner_bg_color{max-width:448px;/*width:448px;*/}
+		
+.settings_block .col1{float:left;width:40%;}
+.settings_block .col2{float:right;width:30%;}	
+.ac_block .col1{width:32.5%;margin-right:1%;float:left;}
+.ac_block .col2{width:32.5%;margin-right:1%;float:left;padding:0 25px;}
+.ac_block .col3{width:33%;float:left;}
+.ac_block .charts_data{padding-left:40px;}
+.ac_block .col3 .button_style{min-width:260px;margin-top:20px;}
+.expiry_date_right{text-align:right;margin-top:15px;padding-right:30px;}
+.mynav{float:left;width:60%;}
+.product_block:nth-child(3n){margin-right:0;}
+
+.purchase_history_block .col1,
+.purchase_history_block .col2,
+.purchase_history_block .col3,
+.purchase_history_block .col4,
+.purchase_history_block .col5{float:left;width:20%;}
+		.greayheader_row .col1{width:38%;}
+		.greayheader_row .col2{width:17%;}
+		.greayheader_row .col3{width:20%;}
+		.greayheader_row .col4{width:8%;}
+		.greayheader_row .col5{width:17%;}
+		
+.discover_header_block{max-width: 330px;}
+	
+.purchase_history_block .col1{width:18%;}
+.purchase_history_block .col2{}
+.purchase_history_block .col3{}
+.purchase_history_block .col4{}
+.purchase_history_block .col5{width:18%;}
+}
+
+@media (min-width: 1025px) {
+.mynav{position:relative;height:42px;}
+	.nav li#selectedNav{background:#fff;}
+	a#selectedNav{color:#f7242b;text-decoration:none;line-height:23px;}
+
+}
+/*
+*1200px
+*/
+@media (min-width: 1200px) {
+	.container{width:1050px;padding-left:0;padding-right:0;}
+	.mynav .container{padding-left:60px;padding-right:60px;}
+	.container_block .container{width:1050px;padding-left:45px;padding-right:45px;}
+	
+	.discover_header .container{	padding-left:0px;padding-right:0px;}
+	.main_header .container{	padding-left:60px;padding-right:60px;}
+	
+}
+							@media only screen and (min-width: 320px) and (max-width: 768px) {
+							.cubacel_app_wrapper{float:none;max-width:480px;width:100%;margin:0 auto;}
+							.expires_date_block{margin:0 auto;}
+							.purchase_history_block .col1, .purchase_history_block .col2, .purchase_history_block .col3,
+							.purchase_history_block .col4, .purchase_history_block .col5{float:left;text-align:left;clear:both;}
+							}
+
+							@media only screen and (min-width: 481px) and (max-width: 768px) {
+								.ac_block h4, .expiry_date_right{text-align:center;}
+								.ac_block .col1{text-align:center;float:none;}
+								.ac_block .col2{text-align:center;float:none;}
+								.features_block{margin:0 auto;width:320px;}
+								.purchase_history_block .col1, .purchase_history_block .col2, .purchase_history_block .col3,
+							.purchase_history_block .col4, .purchase_history_block .col5{float:left;text-align:left;clear:both;}
+							}
+							
+							@media only screen and (min-width: 768px) and (max-width: 840px) {
+
+							}
+							
+							@media only screen and (min-width: 320px) and (max-width: 1024px) {
+								/* nav click selector - MOBILE */	
+								li#selectedNav {background:#ffffff;background-image:url(https://mi.cubacel.net/EtescaSelfCareApp/images/nav_select.png);background-repeat:no-repeat;
+								}
+								a#selectedNav{color:#f7242b;text-decoration:none;border-right:none;}
+								.collapse.in li a{border-right:none;}
+								#bcrumbs_page, #bcrumbs_offerspage{visibility: hidden;}
+							}
+							
+							@media only screen and (min-width: 769px) and (max-width: 991px) {
+								.button_style{font-size: 18px; padding: 4px 10px;}
+								.cubacel_app_wrapper{float:left;width:100%;}
+								.cubacel_app_wrapper .col1{width:48.85%;float:left;}
+								.cubacel_app_wrapper .col2{width:51%;padding:15px 20px;float:left;}
+								.cubacel_app_wrapper .app_title{font-size:27px;font-weight:normal;}
+								.app_desc{font-size:16px;font-weight:normal;line-height:24px;}
+								.app_button_margin{padding-top:30px;}
+								.greayheader_row{line-height:38px;}
+								.greayheader_row .col1{width:24%;}
+								.greayheader_row .col2{width:25%;}
+								.greayheader_row .col3{width:25%;}
+								.greayheader_row .col4{width:1%;}
+								.greayheader_row .col5{width:24%;}
+								.navbar-collapse { margin-left:15px; margin-right:15px }
+							}
+							
+							@media only screen and (min-width: 960px) and (max-width: 991px) {
+								.product_block{margin-right:15px;width: 32%;}
+								.product_block:nth-child(3n){margin-right:0;}
+								.discover_header_block{max-width:32%;margin-right:15px;}
+							}
+.bold{font-weight:bold;}
+.normal{font-weight:normal;}
+.center{text-align:center;}
+.absolute_bottom{position:absolute;bottom:10px;}
+.fLeft{float:left;}
+.fRight{float:right;}
+.no_rm {margin-right:0%;}
+.no_left_margin{margin-left:0;}
+.pLeft3{padding-left:3px;}
+.pRight3{padding-right:3px;}
+.pLeft5{padding-left:5px;}
+.pRight5{padding-right:5px;}
+.pLeft10{padding-left:10px;}
+.pLeft40{padding-left:40px;}
+.pRight10{padding-right:10px;}
+.pTop24{padding-top:24px;}
+.pTop5{padding-top:5px;}
+.pBottom10{padding-bottom:10px;}
+.mLeft5{margin-left:5px;}
+.mLeft10{margin-left:10px;}
+.mRight5{margin-right:5px;}
+.mRight10{margin-right:10px;}
+.mRight20{margin-right:20px;}
+.mRight25{margin-right:25px;}
+.mBottom10{margin-bottom:10px;}
+.mBottom15{margin-bottom:15px;}
+.mBottom25{margin-bottom:25px;}
+.mBottom20{margin-bottom:20px;}
+.no_display{display:none;}
+.no_underline{text-decoration:none;}
+.mTop5{margin-top:5px;}
+.mTop10{margin-top:10px;}
+.mTop15{margin-top:15px;}
+.mTop20{margin-top:20px;}
+.img_margin_right{margin-right:5px;}
+.width5{width:5%;}
+.width20{width:20%;}
+.width25{width:25%;}
+.no_bottom_border{border-bottom:0px !important;}
+.no_background{background:transparent !important;}
+.dBlock{display:inline-block;}
+.header{ }
+
+.grey_header, .nav_header, .main_banner, .main_header, .discover_header, .copyright_info, .container_block, .main_content, .ticket_container,  .oh_container, .mysubs_container, .cubacel_app_header, .main_banner_greyheader, #backTop,
+.bread_crumbs, .inner_page_title, .myaccount_details, .products_page_details, .mad_accordion_container, .inner_page_title_bg, .mypackages_accordion_container{
+	float:left;width:100%;clear:both;
+}
+.bread_crumbs, .inner_page_title, .myaccount_details, .products_page_details{margin-bottom:20px;}
+
+.inner_page_title_bg{margin:20px 0;background:#666666;}
+.product_inner_page_title{min-height:76px;padding-top:15px;}
+.product_inner_page_title .page_title_heading{color:#fff;}
+.pd_info_block{max-width:480px;}
+.below_img_desc{margin:10px 0;}
+.pd_information{margin:0px 0 20px 0;}
+.pd_information p{margin-bottom:10px;}
+.pd_info_block h2{font-size:30px;font-weight:100;margin-bottom:20px;}
+.pd_info_block .button_style, .products_purchase_details_block .button_style{min-width:120px;}
+.pd_info_block h3{font-size:24px;font-weight:100;margin-bottom:10px;}
+.pd_info_block ul{margin:0;padding:0;padding-left:15px;}
+.pd_info_block  li{color:#f7242b;line-height:18px;}
+
+.store_icon, .globe_icon, .lang_icon{height:40px;width:40px;margin-right:10px;float:left;}
+
+.grey_header{
+	background-color:#f4f4f4;
+}
+
+.cubaLogo{
+	float:left;
+	padding:13px 50px 10px 0;
+}
+
+.cubaLogo.logo_img{
+	margin-top:10px;
+	margin-bottom:12px;
+}
+
+.social_icons{
+    float: right;
+    margin-right: -15px;
+    margin-top: 32px;
+}
+
+.social_icons .social_img{
+margin-right:20px;
+}
+
+.nav_header{
+	background:#7a2182;
+}
+
+ul.footer_links{
+	list-style:none;
+	width:100%;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+}
+
+ul.footer_links li{
+	display:inline-block;
+	border-right:solid 1px #b3b3b3;
+	padding:0px 8px 0px 8px;
+	color:#636363;
+	line-height:24px;
+	margin-bottom:50px;
+}
+
+ul.footer_links li:first-child{
+	padding-left:0;
+}
+
+.main_banner_content{
+		
+}
+
+.main_header{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.main_header_inner{
+	background:#ffffff;
+	float:left;
+	width:100%;
+}
+
+.main_header_left{
+	float:left;
+}
+
+img.responsive{
+    height: auto;
+/*	width:100%;*/
+   max-width:100%;
+    vertical-align: middle;
+}
+.main_header_right{
+	float:left;
+	position:relative;
+	padding-left:5px;
+	padding-top:5px;
+	padding-bottom:15px;
+}
+.main_header_right h1{
+	padding-top:15px;
+}
+.main_header_right h1, .main_header_right .main_heading_info{
+padding-left:15px;
+}
+
+h1.main_heading{
+font-weight:400;
+color:#636363;
+font-size:34px;
+}
+
+.main_heading_info{
+	margin-bottom:12px;
+}
+
+.button_style{
+    background-color: #f7242b;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    color: #fff;
+	cursor: pointer;	
+    display: inline-block;
+	font-family: 'Roboto', Arial, sans-serif;
+	line-height:33px;
+    vertical-align: middle;
+}
+
+.cancel_button{
+    background-color: #666666;
+}
+
+h2.sub_heading{
+font-size:20px;
+line-height:26px;
+font-weight:300;
+padding-bottom:13px;
+}
+
+.discover_header{
+margin-bottom:20px;
+}
+
+.discover_header h1{
+	margin-top:10px;
+	margin-bottom:30px;
+}
+
+.discover_header_inner{
+
+}
+
+.discover_content{
+	padding-top:10px;padding-left:15px;
+}
+
+.discover_content a{color:#636363;}
+	
+.discover_header_block{
+	background:#f4f4f4;
+}
+
+.discover_content{
+	padding:15px;
+}
+
+.discover_desc{
+	margin:0 0 10px 0;
+	line-height:20px;
+	font-size:14px;
+}
+
+.no_right_margin{
+	margin-right:0;
+}
+
+.main_footer{
+	background:#eaecee;
+	clear:both;
+	color:#636363;	
+	float:left;
+	min-height:56px;
+	width:100%;
+	font-size:12px;
+	border-top:solid 1px #f6585d;
+}
+
+/* Inner Page Block */
+
+body#inner_page{
+
+}
+
+.container_block{
+}
+
+.main_content{
+}
+
+h1.main_title_heading{
+font-weight:normal;
+margin:25px 0 15px 0;
+}
+
+.button_block{
+	overflow:hidden;
+	padding-right:15px;
+}
+
+.button_block .button_col1{
+	float:left;
+}
+
+.button_block .button_col2{
+	float:right;margin-top:33px;
+}
+
+.button_block .button_col2 a{
+text-decoration:none;
+color:#636363;
+font-weight:bold;
+}
+	
+#accordion h3{
+	margin:15px 0;padding:5px 0;clear:both;
+}
+/*#accordion h3, */
+/*.ui-accordion .ui-state-default*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+background-image:url(https://mi.cubacel.net/EtescaSelfCareApp/images/chevron_down.png);
+background-repeat:no-repeat;
+background-position:right 13px;
+background-size:24px 16px;
+clear:both
+}
+
+/*#accordion h3.ui-state-active, */
+/*.ui-accordion .ui-accordion-header-active*/
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+background-image:url(https://mi.cubacel.net/EtescaSelfCareApp/images/chevron_up.png);
+background-repeat:no-repeat;
+background-position:right 13px;
+background-size:24px 16px;
+clear:both
+}
+
+.button_action{margin-top:15px;}
+.button_buy{min-width:120px;}
+.button_action form{display:inline;float:left;}
+.button_cancel{background:#636363;min-width:110px;margin-left:15px;}
+.link_button{color:#ffffff;line-height: 35px;text-align: center;text-decoration: none;}
+
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 400
+}
+.form-control {
+    display: block;
+	width:100%;
+    max-width: 400px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #666666;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+}
+.form-control::-moz-placeholder {
+    color: #999;
+    opacity: 1
+}
+.form-control:-ms-input-placeholder {
+    color: #999
+}
+.form-control::-webkit-input-placeholder {
+    color: #999
+}
+textarea.form-control {
+    height: auto;
+}
+
+.home_welcome{background:#e6e6e6;width:100%;float:left;}
+
+.welcome_left{float:left;padding:20px 0 20px 15px;}
+.welcome_right{float:left;padding:5px 0;}
+.welcome_right .winfo{margin-right:5px;}
+.welcome_right form{display:inline;}
+.home_acc_no{background:#f9f9f9;width:100%;float:left;}
+
+/* Welcome Main Page */
+.welocme_heading{
+	font-size:28px;margin-bottom:30px;font-weight:400;margin-top:20px;
+}
+.welcome_heading_info{
+	font-size:17px;margin-bottom:30px;
+}
+.welcome_home .main_title_heading a{text-decoration:none;color:#636363;}
+.welocme_heading a, .welcome_heading_info a{text-decoration:none;color:#636363;cursor:default;}
+.login_button{
+	margin-bottom:10px;
+}
+.login_button .link_button{width:150px;}
+.footer_contact{font-size:20px;	margin-bottom:1px;}
+.contactUs_text{display:inline-block;}
+.main_banner_content{color: #fff;float: left;min-height: 293px;padding-top: 229px;width: 49%;}
+.container_block{background:#eaecee;}
+.container_block .container{background:#ffffff;margin-top:15px;}
+.row{overflow:hidden;}
+	
+.icon_address{background:url(../images/address.png);background-repeat:no-repeat;height:26px;width:33px;display:inline-block;margin-right:10px;line-height:26px;vertical-align:text-top;margin-top:-1px;}
+.icon_edit{background:url(../images/edit_pen.png);background-repeat:no-repeat;height:26px;width:26px;display:inline-block;line-height:26px;vertical-align:text-top;margin-top:-5px;}
+.icon_userdetails{background:url(../images/user_detail.png);background-repeat:no-repeat;height:33px;width:30px;display:inline-block;margin-right:10px;line-height:26px;vertical-align:text-top;margin-top:-5px;}
+.copyright_info a{text-decoration:none;}
+
+.icon_viewpdf{background:url(../images/view_pdf.png);background-repeat:no-repeat;height:32px;width:27px;display:inline-block;margin-right:10px;line-height:26px;vertical-align:text-top;margin-top:-6px;margin-left:5px;}
+.bill_col_one, .bill_col_two{float:left;}
+.bill_col_three{float:right;text-align:right;line-height:54px;}
+.mb_footer_row{line-height:27px;}
+.col_row{float:left;width:100%;text-align:left;}
+.viewpdf_label{color:#f57d2f;}
+.viewPdfLink{color:#f57d2f;text-decoration:none;}
+.open_amount{color:#f57d2f;}
+
+a.acLink{color: #f47421;font-weight: bold;text-decoration: none;font-size:18px;}
+.freeze_wrapper{top:0;background:#f4f4f4;position:fixed;width:100%;z-index:999;border-bottom: 1px solid #f6585d;}
+
+.main_banner_background{
+	min-height:299px;
+	background-image:url(https://mi.cubacel.net/EtescaSelfCareApp/images/homepage_banner.jpg); 
+    background-repeat: no-repeat;
+	background-position:right center;
+    background-size: cover;
+	border-bottom:solid 1px #f6585d;
+}
+.nav{}
+.nav li{display: inline-block;font-size:14px;font-weight:700;line-height:25px;padding-top:10px;}
+.nav li a{font-size:15px;text-decoration:none;color:#666666;padding:10px;line-height:25px;border-right:solid 1px #ccc;}
+.nav li:last-child a{border-right:none;}
+
+.discover_header_inner .button_style{min-width:222px;}
+.cubacel_app_header{margin-bottom:20px;}
+.cubacel_app_wrapper{background:#f4f4f4;}
+
+.banner_bg_color{margin-top:48px;background:#f7242b;color:#fff;}
+
+.sub_welcome{font-weight:normal;}
+.sub_learn{margin-bottom:10px;font-size:18px;}
+.main_footer_row2{float:left;width:100%;text-align:center;}
+.main_footer_row1{clear:both;float:left;width:100%;}
+.terms_text{margin-bottom:20px;}
+.copyrigt_text{margin-bottom:20px;line-height:18px;}
+.contactUs_text{font-weight:bold;}
+.contactUs_text a{color:#666666;margin-right:20px;}
+.emailIcon{vertical-align:middle;padding-right:5px;width:33px;height:auto;}
+.fbIcon{vertical-align:middle;padding-right:5px;width:26px;height:auto;}
+.twitterIcon{vertical-align:middle;padding-right:5px;width:26px;height:auto;}
+.main_banner_greyheader{min-height:77px;}
+.greayheader_row{float:left;width:100%;background-color:#f4f4f4;padding:15px;font-size:16px;}
+.greayheader_row .col1,.greayheader_row .col2,.greayheader_row .col3,.greayheader_row .col4,.greayheader_row .col5{
+	float:left;
+}
+
+.greayheader_row  .button_style{min-width:166px;}
+
+.backTopwrapper{font-size:20px;float:left;width:100%;margin-bottom:20px;line-height:25px;}
+.backTopwrapper a{background-image:url(https://mi.cubacel.net/EtescaSelfCareApp/images/page_up.svg);
+background-repeat:no-repeat;padding-left:36px;
+background-size:24px 24px;color:#666666;text-decoration:none;}
+.backTopwrapper a:hover, .backTopwrapper a:active{text-decoration:underline;}
+
+.etecsa_icon{width:124px;height:38px;}
+.page_title_heading{color: #636363; font-weight: 400;}
+.myaccount_details_block{float: left;margin-bottom: 25px;width: 100%;}
+.cuc-font{font-size:18px;}
+.mad_row_header{float:left;width:100%;line-height:30px;background:#666666;color:#ffffff;padding:10px 20px;}
+
+.mad_row_footer{float:left;width:100%;line-height:30px;padding:10px 20px;border-bottom:solid 1px #f6585d;}
+
+.settings_block{padding:20px 15px;background:#f4f4f4;float: left;margin-bottom: 25px;width: 100%;border-bottom:solid 1px #f6585d;line-height:16px;}
+
+.settings_block .col1 h3{font-size:20px;margin-bottom:20px;}
+
+.checkbox_style{padding:10px;}
+.by_proceeding{margin-bottom:30px;}
+
+.ac_block{padding:15px 10px;background:#f4f4f4;float:left;width:100%;margin-bottom:20px}
+.ac_block h4{font-size:20px;margin-bottom:20px;}
+
+.ac_block_title,
+.product_block_title,
+.mypackages_block_title{font-size:22px;margin-bottom:15px;font-weight:100;padding-top:10px;}
+
+.product_block .right_arrow{height:15px;width:75px;display:inline-block;line-height:14px;
+background-image:url(https://mi.cubacel.net/EtescaSelfCareApp/images/chevron_right.png);
+background-repeat:no-repeat;
+background-position:right;
+background-size:10px 15px;vertical-align:middle;
+}
+.product_block  a{color:#666666;}
+.product_block .button_style{min-width:260px}
+.product_accordion_block{width:100%}
+
+.expires_date_block{color:#fff;background:#9abb50;height:250px;width:250px;}
+.expires_date_block .expires_date{font-size:140px;font-weight:bold;line-height:120px;text-align:center;padding-top:68px;}
+.expires_date_block .expires_hours{text-align:center;font-size:20px;}
+
+.features_block p{margin-bottom:12px;line-height:16px;}
+.orange_bg{background:#d89d3f;}
+.red_bg{background:#d64c41;}
+
+.bread_crumbs{float:left;width:100%;margin-top:68px;}
+.bread_crumbs .homeMain {color:#f7242b;}
+
+.products_purchase_details_block{border:solid 1px #f0f0f0;float:left;line-height:20px;padding:20px;min-width:300px;width:60%;margin-bottom:20px;}
+.products_purchase_details_block p{margin-bottom:10px;}
+.products_purchase_details_block h4{font-size:18px;font-weight:100;margin:20px 0;}
+.buttons_container form{display:inline;}
+
+.terms_conditions_block, .support_article_block{float:left;width:100%;}
+.tc_inner{max-width:480px;line-height:20px;}
+.support_article_block h3{font-size:20px;font-weight:normal;}
+.support_article_block .pd_info_block{max-width:480px;}
+.terms_text a{color:#636363}
+.terms_text a:hover, .terms_text a:active, .contactUs_text a:hover, .contactUs_text a:active{text-decoration:underline}
+.purchase_history_block{background:#f4f4f4; float:left; width:100%; margin-bottom:20px; padding:10px;line-height:20px;border-bottom:solid 1px #f6585d;}
+
+
+.purchase_history_block .field_label{}
+.purchase_history_block .field_value{font-weight:bold;padding-left:5px;}
+.error_page_block{float:left;width:100%;margin-bottom:10px;}
+.error_message h2, .error_message{font-size:22px;color:#636363;font-weight:300;	line-height:30px; font-family: 'Roboto', Arial, sans-serif;}
+
+.button_style:hover{
+	background-color: #fff;
+    border: 1px solid #f7242b;
+	color: #666666;
+}
+
+.cancel_button:hover{
+	background-color: #fff;
+    border: 1px solid #666666;
+	color: #666666;
+}
+
+.welcome_login_page, .registration_page, .registration_verify_page, .registration_detailinfo_page, .registration_confirmation_page, .forgot_password_page, .forgot_passwordsetnew_page, .error_page{margin-top:68px;}
+.welcome_login_wrapper .button_style{min-width:120px;}
+.welcome_login_wrapper .form-group a{color:#666666;}
+.welcome_login_wrapper .form-group a:hover,
+.welcome_login_wrapper .form-group a:active{text-decoration:none;}
+
+.module_Breadcrumb_msdp{ display:inline-block; float:left;}
+.module_Breadcrumb_msdp a{color:#f7242b; text-decoration:none;}
+.module_Breadcrumb_msdp a:after {content: " /"}
+.module_Breadcrumb_msdp .portalIcon{display:none;}
+.node_link{padding-left:5px;}
+.module_page_node{display:inline-block;}
+#bcrumbs_offerspage{margin-top: 68px;margin-left:auto;margin-right:auto;margin-bottom:20px;}
+#bcrumbs_page{margin-top: 68px;margin-left:auto;margin-right:auto;margin-bottom:20px;}
+
+.hint{color:#999999}
+.register_fields_info{width:100%; max-width: 400px; margin-bottom:20px; line-height:18px;}
+.buttons_container a.button_style{color:#ffffff;}
+.buttons_container a.button_style:hover{color:#666666;}
+.register_detailinfo, .forgot_passwordnew{width:100%; max-width: 400px; margin-bottom:20px; line-height:18px;}
+.register_confirmation{width:100%; max-width: 400px; margin-bottom:20px; line-height:18px;}
+.registerconf{color:#666666;}
+.circle-text{font-weight:700;letter-spacing:-3px;}
+.mad_row_footer{background:#f4f4f4}
+
+/*jQuery Validations*/
+.error{color:#f7242b;line-height:20px;}
+input.error{border:dotted 1px #f7242b;}
+
+/*ON / OFF Switch*/
+    .onoffswitch {
+        position: relative; width: 90px;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    }
+    .onoffswitch-checkbox {
+        display: none;
+    }
+    .onoffswitch-label {
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #666666; border-radius: 1px; font-size:22px;
+    }
+    .onoffswitch-inner {
+        display: block; width: 200%; margin-left: -100%;
+        transition: margin 0.3s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+        font-size: 22px; color: white;  font-weight: bold;
+        box-sizing: border-box;
+    }
+    .onoffswitch-inner:before {
+        content: "ON";
+        padding-left: 10px;
+        background-color: #9abb50; color: #FFFFFF;
+    }
+    .onoffswitch-inner:after {
+        content: "OFF";
+        padding-right: 10px;
+        background-color: #EEEEEE; color: #666666;
+        text-align: right;
+    }
+    .onoffswitch-switch {
+        display: block; width: 18px; margin: 6px;
+        background: #666666;
+        position: absolute; top: 0; bottom: 0;
+        right: 56px;
+        border: 2px solid #333333; border-radius: 1px;
+        transition: all 0.3s ease-in 0s; 
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px
+    }
+	.product_block a.link_button{color:#ffffff}
+	.product_block a.link_button:hover,.product_block a.link_button:active{color:#666666;text-decoration:none}
+.contact_block{float:left; width:100%}
+.contact_inner{max-width:480px; line-height:20px}
+.contact_page{margin-top:68px}
+
+.sub_learn a{color:#666666;}
+.sub_learn a:hover{text-decoration:none;}
+
+.support_article_block #accordion h3{
+	padding-right: 20px;
+}
+
+.welcome_login_Block{clear:both;float:left;width:100%;}
+
+/* Jquery Error Validations */
+.error{color:#f7242b;line-height:20px;}
+input.error{border:dotted 1px #f7242b;}
+#loginForm label {/*width: 250px;*/}
+#loginForm label.error, #loginForm input.submit {margin-left: 253px;}
+#loginForm {max-width: 670px;}
+#loginForm label.error { margin-left: 0px; width: auto; display: inline;}
+
+.error_Block{clear:both;float:left;width:100%;}
+
+.ac_block_whitebg{background:#ffffff;padding:0;}
+
+.captcha_Block{float:left;width:100%;}
+.captcha_Block_button{float:left;width:100%;margin-top:10px;}
+.prefix_wrapper{display:inline;padding-left:10px;position:absolute;padding-top:8px;}
+.input_postfix{padding-left:40px;}
+.disabled_input_field{font-size:14px;width:26px;padding:0;background:#fff;border:none;}
+/*.prefix_BlockFix{display:inline;padding-left:10px;position:absolute;padding-top:10px;}*/
+
+/* Last Edit 20 JUNE 2016 */

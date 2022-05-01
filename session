@@ -1,0 +1,16 @@
+import requests
+cj = {"JSESSIONID":"ADF22C6054A33765C072CF5568649872",
+"guestUserProfile":"eJyrVspJLC7Jzssvz0tJLctMTlWyUvLNr8rMyUnUN9UzUNIByuelAwVTi5VqAXOYDw4=",
+"DRUTT_DSERVER_SESSIONID": "16a64cf2a80.p0vDP0bPieOWHX6iRrxrKJQXU6aLLC3baQbTYAs2",
+"portaluser" : "1556469530915:c7464feaa510f6a4145fa3db93a551c3df215f9832842fa70539624d28d9e293ea2acccca3d93c30912a78383bc2ab080cee90919e4ae4d56ccadaa286b53c3594c2892a9263f0491a938dbfd8d5a6dbeaa23212f070657266affce76859db416ea079806ae14b7"
+}
+
+# Create session and add login params
+albany_session = requests.session()
+albany_session.params = cj
+
+# Login and confirm login via searching for the 'ASP.NET_SessionId' cookie.
+# Use the login page, not the search page first.
+page_link = 'https://mi.cubacel.net/primary/_-ijqJlSHh'
+data=albany_session.post(page_link).content
+print(data)
